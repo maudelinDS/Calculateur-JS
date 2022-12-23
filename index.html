@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Mon Calculateur JavaScript</title>
+  </head>
+  <body>
+    <div class="titleH1">
+      <h1>Mon Calculateur de moyenne</h1>
+    </div>
+    <div class="container">
+      <div class="container2">
+        <div class="grp1">
+          <div class="haut">
+            <div class="titleH2">
+              <h2>Ecole Pro.</h2>
+            </div>
+          </div>
+          <div class="bas">
+            <div class="test2">
+              <table id="table-ecole_pro-semestre1" class="table" border="1">
+                <h3>Ecole Pro.</h3>
+                <div class="bouttonsAddAndRemoveGrades" id="addButton">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-ecole_pro-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input
+                      type="button"
+                      id="removeGrade-ecole_pro-semestre1"
+                      name="remove"
+                      value="-"
+                      />
+                  </div>
+                </div>
+                
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-ecole_pro-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                        <!-- localisation = document.getelementbyid("id")
+                      variable = '<tr>qqch</tr>'
+                      variable2 = '<td>sujet de la case</td>'
+                      localisation.innerhtml = variable -->
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-ecole_pro-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+                        />
+                      <br /><br />
+
+                    </th>
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span id="average-ecole_pro-semestre1"></span></h4>
+
+            </div>
+          </div>
+        </div>
+        <div class="grp2">
+          <div class="haut">
+            <div class="titleH2">
+              <h2>Ecole Inter.</h2>
+            </div>
+          </div>
+          <div class="bas">
+            <div class="test2">
+              <table id="table-ecole_inter-semestre1" class="table" border="1">
+                <h3>Ecole Inter</h3>
+                <div class="bouttonsAddAndRemoveGrades">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-ecole_inter-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input
+                      type="button"
+                      id="removeButton-ecole_inter-semestre1"
+                      name="remove"
+                      value="-"
+                      />
+                  </div>
+                </div>
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-ecole_inter-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-ecole_inter-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+
+                        />
+                      <br /><br />
+                    </th>
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span
+                  id="average-ecole_inter-semestre1"></span></h4>
+
+            </div>
+          </div>
+        </div>
+        <div class="grp3">
+          <div class="grp3-haut">
+            <div class="haut">
+              <div class="titleH2">
+                <h2>Compétence de base Elargie</h2>
+              </div>
+ 
+            </div>
+          </div>
+          <div class="bas">
+            <div class="test2Math">
+              <table
+                id="table-comp_elargie-branches-math-semestre1"
+                class="table"
+                border="1">
+                <div class="mathEtAnglais">
+                  <div class="mathEtAnglaisButton">
+                    <input
+                      type="button"
+                      class="mathButton"
+                      id="mathButton"
+                      name="mathButton"
+                      value="Math"
+                      />
+                    <input
+                      type="button"
+                      class="englishButton"
+                      id="englishButton"
+                      name="englishButton"
+                      value="Anglais"
+                      />
+                  </div>
+  
+                  <div class="semestreBoxMath">
+                    <div class="radio1">
+                      <input
+                        type="radio"
+                        id="radio-comp_elargie-branches-math-semestre1"
+                        name="radio-math"
+                        value="semestre1"
+                        class="radio"
+
+                        
+                        />
+                      <label for="radio-comp_elargie-branches-math-semestre1">1</label>
+                    </div>
+  
+                    <div class="radio2">
+                      <input
+                        type="radio"
+                        id="radio-comp_elargie-branches-math-semestre2"
+                        name="radio-math"
+                        value="semestre2"
+                        class="radio"
+
+                        
+                        />
+                      <label for="radio-comp_elargie-branches-math-semestre2">2</label>
+                    </div>
+  
+                    <div class="radio3">
+                      <input
+                        type="radio"
+                        id="radio-comp_elargie-branches-math-semestre3"
+                        name="radio-math"
+                        value="semestre3"
+                        class="radio"
+
+                        />
+                      <label for="radio-comp_elargie-branches-math-semestre3">3</label>
+                    </div>
+          
+                  </div>
+                </div>
+                <h3>Math</h3>
+                <div class="bouttonsAddAndRemoveGrades">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-comp_elargie-branches-math-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input
+                      type="button"
+                      id="removeButton-comp_elargie-branches-math-semestre1"
+                      name="remove"
+                      value="-"
+                      />
+                  </div>
+                  
+                </div>
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-comp_elargie-branches-math-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-comp_elargie-branches-math-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+
+                        />
+                      <br /><br />
+                    </th>
+                  
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span id="average-comp_elargie-branches-math-semestre1"></span></h4>
+
+
+            </div>
+            <div class="semestreBoxAnglais">
+              <div class="radio1">
+                <input
+                  type="radio"
+                  id="radio-comp_elargie-branches-anglais-semestre1"
+                  name="radio-english"
+                  value="semestre1"
+                  class="radio"
+
+                  />
+                <label for="radio-comp_elargie-branches-anglais-semestre1">1</label>
+              </div>
+
+              <div class="radio2">
+                <input
+                  type="radio"
+                  id="radio-comp_elargie-branches-anglais-semestre2"
+                  name="radio-english"
+                  value="semestre2"
+                  class="radio"
+
+                  />
+                <label for="radio-comp_elargie-branches-anglais-semestre2">2</label>
+              </div>
+
+              <div class="radio3">
+                <input
+                  type="radio"
+                  id="radio-comp_elargie-branches-anglais-semestre3"
+                  name="radio-english"
+                  value="semestre3"
+                  class="radio"
+
+                  />
+                <label for="radio-comp_elargie-branches-anglais-semestre3">3</label>
+              </div>
+              <div class="radio4">
+                <input
+                  type="radio"
+                  id="radio-comp_elargie-branches-anglais-semestre4"
+                  name="radio-english"
+                  value="semestre4"
+                  class="radio"
+
+                  />
+                <label for="radio-comp_elargie-branches-anglais-semestre4">4</label>
+              </div>
+              <div class="radio5">
+                <input
+                  type="radio"
+                  id="radio-comp_elargie-branches-anglais-semestre5"
+                  name="radio-english"
+                  value="semestre5"
+                  class="radio"
+
+                  />
+                <label for="radio-comp_elargie-branches-anglais-semestre5">5</label>
+              </div>
+            </div>
+            <div class="test2Math">
+              <table id="table-comp_elargie-branches-anglais-semestre1" class="table" border="1">
+                <h3>Anglais</h3>
+                <div class="bouttonsAddAndRemoveGrades">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-comp_elargie-branches-anglais-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input
+                      type="button"
+                      id="removeButton-comp_elargie-branches-anglais-semestre1"
+                      name="remove"
+                      value="-"
+                      />
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+                </div>
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-comp_elargie-branches-anglais-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-comp_elargie-branches-anglais-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+
+                        />
+                      <br /><br />
+                    </th>
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span id="average-comp_elargie-branches-anglais-semestre1"></span></h4>
+            </div>
+
+          </div>
+        </div>
+        <div class="grp4">
+          <div class="grp4-haut">
+            <div class="haut">
+              <div class="titleH2">
+                <h2>Culture G.</h2>
+              </div>
+
+              <div class="semestreBoxCultureG">
+
+                <div class="radio1">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre1"
+                    name="radio-culture"
+                    value="semestre1"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestres-semestre1">1</label>
+                </div>
+
+                <div class="radio2">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre2"
+                    name="radio-culture"
+                    value="semestre2"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestres-semestre2">2</label>
+                </div>
+                <div class="radio3">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre3"
+                    name="radio-culture"
+                    value="semestre3"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre3">3</label>
+                </div>
+                <div class="radio4">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre4"
+                    name="radio-culture"
+                    value="semestre4"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre4">4</label>
+                </div>
+                <div class="radio5">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre5"
+                    name="radio-culture"
+                    value="semestre5"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre5">5</label>
+                </div>
+                <div class="radio6">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre6"
+                    name="radio-culture"
+                    value="semestre6"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre6">6</label>
+                </div>
+                <div class="radio7">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre7"
+                    name="radio-culture"
+                    value="semestre7"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre7">7</label>
+                </div>
+                <div class="radio8">
+                  <input
+                    type="radio"
+                    id="radio-culture_G-semestres-semestres-semestre8"
+                    name="radio-culture"
+                    value="semestre8"
+                    class="radio"
+
+                    />
+                  <label for="radio-culture_G-semestres-semestre8">8</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bas">
+            <div class="test2">
+              <table id="table-culture_G-semestres-semestres-semestre1" class="table" border="1">
+                <h3>Culture G</h3>
+                <div class="bouttonsAddAndRemoveGrades">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-culture_G-semestres-semestres-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input type="button" id="removeButton-culture_G-semestres-semestres-semestre1"
+                      name="remove" value="-" />
+                  </div>
+                </div>
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-culture_G-semestres-semestres-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-culture_G-semestres-semestres-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+
+                        />
+                      <br /><br />
+                    </th>
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span id="average-culture_G-semestres-semestres-semestre1"></span></h4>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="grp5">
+          <div class="haut">
+            <div class="titleH2">
+              <h2>TPI</h2>
+            </div>
+          </div>
+          <div class="bas">
+            <div class="test2">
+              <table id="table-TPI-semestre1" class="table" border="1">
+                <h3>TPI</h3>
+                <div class="bouttonsAddAndRemoveGrades">
+                  <div class="addButton">
+                    <input
+                      type="button"
+                      id="addButton-TPI-semestre1"
+                      name="add"
+                      value="+"
+                      />
+                  </div>
+                  <div class="removeButton">
+                    <input type="button" id="removeButton-TPI-semestre1"
+                      name="remove" value="-" />
+                  </div>
+                </div>
+                <br /><br />
+                <thead>
+                  <form method="post" name="sample" id="demo">
+                    <th>
+                      Note : <br /><br />
+                      <input
+                        type="number"
+                        id="grade-TPI-semestre1"
+                        step=".5"
+                        name="gradeInput"
+                        min="1"
+                        max="6"
+                        /><br /><br />
+                    </th>
+                    <th>
+                      Description : <br /><br /><input
+                        type="text"
+                        id="description-TPI-semestre1"
+                        name="descriptionInput"
+                        maxlength="20"
+
+                        />
+                      <br /><br />
+                    </th>
+                  </form>
+                </thead>
+              </table>
+              <h4>Votre moyenne est de : <span id="average-TPI-semestre1"></span></h4>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="bottomPage">
+        <div class="grp1BottomPage">
+          <table id="infoArrondie">
+            <tr>
+              <th>
+                Information arrondie
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <p>TPI = 40%</p>
+                <p>Compétences en informatique = 30%</p>
+                <p>Compétences de bases élargies = 10%</p>
+                <p>Culture G = 20%</p>
+              </td>
+            </tr>
+            <tr>
+            </tr>
+          </table>
+        </div>
+        <div class="grp2BottomPage">
+          <table id="branchesEtMoyennes">
+            <tr>
+              <th>Branches </th>
+              <th>Moyennes</th>
+            </tr>
+            <tr>
+              <td>Cours Pro.</td>
+              <td><span id="averageFinal-ecole_pro-semestre1" name="averageFinal1"></span></td>
+            </tr>
+            <tr>
+              <td>Cours Inter.</td>
+              <td><span id="averageFinal-ecole_inter-semestre1" name="averageFinal1"></span></td>
+            </tr>
+            <tr>
+              <td>Anglais / Math</td>
+              <td><span id="averageFinal-comp_elargie-branches" name="averageFinal1"></span></td>
+            </tr>
+            <tr>
+              <td>Culture G.</td>
+              <td><span id="averageFinal-culture_G-semestres" name="averageFinal1"></span></td>
+            </tr>
+            <tr>
+              <td>TPI</td>
+              <td><span id="averageFinal-TPI-semestre1" name="averageFinal1"></span></td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="grp3BottomPage">
+          <div class="titleMoynneGlobal">
+            <h4>Moyenne Global</h4>
+          </div>
+          <p>Votre moyenne global :</p>
+
+          <div class="reussiOuEchec">
+            <span id="averageTotal"></span>
+          </div>
+          <div class="echec">
+            <span id="averageTotal1"></span>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

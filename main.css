@@ -1,0 +1,518 @@
+* {
+  font-family: "Inter";
+
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(2,1fr); */
+}
+
+.titleH1 {
+  display: grid;
+  background-color: #767ada;
+
+  height: 90px;
+}
+
+h1 {
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+
+.titleH2 {
+  box-sizing: border-box;
+  margin-top: 33px;
+
+  background: #767ada;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  height: 42px;
+  width: 138px;
+}
+
+h2 {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 205px;
+}
+
+.bouttonsAddAndRemoveGrades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#table-ecole_pro-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+#table-ecole_inter-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+#table-comp_elargie-branches-math-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+#table-comp_elargie-branches-anglais-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+#table-culture_G-semestres-semestres-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+#table-TPI-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
+}
+
+#table-ecole_inter-semestre1 {
+  height: 100px;
+  overflow: scroll;
+  display: block;
+
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+}
+
+.removeButton {
+  display: flex;
+  justify-content: center;
+}
+
+.addButton>input {
+  box-sizing: border-box;
+  width: 43.83px;
+  height: 39.82;
+
+  top: 19.82%;
+  bottom: 77.25%;
+
+  background: #ffffff;
+  border: 4px solid #767ada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.removeButton>input {
+  box-sizing: border-box;
+  width: 43.83px;
+  height: 39.82;
+
+  top: 19.82%;
+  bottom: 77.25%;
+
+  background: #ffffff;
+  border: 4px solid #767ada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.test2 {
+  display: grid;
+  justify-content: center;
+}
+
+.test2Math {
+  display: grid;
+  justify-content: center;
+}
+
+.grp1 {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.grp2 {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.grp3 {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.grp4 {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.grp5 {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+}
+
+
+.grp1>.haut {
+  display: grid;
+  justify-items: center;
+}
+
+.grp2>.haut {
+  display: grid;
+  justify-items: center;
+}
+
+.grp3-haut>.haut {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+
+  justify-items: center;
+}
+
+.grp4-haut>.haut {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+
+  justify-items: center;
+}
+
+.grp4>.haut {
+  display: grid;
+  justify-items: center;
+}
+
+.grp5>.haut {
+  display: grid;
+  justify-items: center;
+}
+
+
+
+
+.semestreBoxMath {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 42px;
+  margin-bottom: 37px;
+
+}
+
+.semestreBoxAnglais {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 42px;
+}
+
+.semestreBoxCultureG {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  margin-top: 115px;
+
+
+}
+
+.semestreBoxEcolePro {
+  display: flex;
+  grid-template-columns: repeat(1, 1fr);
+
+
+
+}
+
+.mathEtAnglaisButton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 42px;
+}
+
+.indexBox>input {
+  margin-top: 42px;
+}
+
+#semestreInput>input {
+  display: none;
+}
+
+.indexBox>input {
+  margin-top: 42px;
+}
+
+.indexBox>input :checked {
+  margin-top: 42px;
+}
+
+/* .grp1  > .bas{
+    margin-top: 199px;
+  }
+  .grp3  > .bas{
+    margin-top: 37px;
+  } */
+
+.mathButton {
+  box-sizing: border-box;
+
+  top: 19.82%;
+  bottom: 77.25%;
+
+  background: #ffffff;
+  border: 4px solid #767ada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 68px;
+  height: 30px;
+
+  transition: 1s;
+}
+
+input:hover {
+  background-color: #767ada;
+}
+
+.englishButton {
+  box-sizing: border-box;
+
+  top: 19.82%;
+  bottom: 77.25%;
+
+  background: #ffffff;
+  border: 4px solid #767ada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 68px;
+  height: 30px;
+  transition: 1s;
+}
+
+input:hover {
+  background-color: #767ada;
+}
+
+.radio1 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio2 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio3 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio4 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio5 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio6 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio7 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio8 {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+
+.radio1Anglais {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio2Anglais {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.radio3Anglais {
+  display: grid;
+  grid-template-rows: repeat(2.1fr);
+  justify-items: center;
+}
+
+.bottomPage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 28px;
+}
+
+.bottomPage h4 {
+  color: white;
+}
+
+.bottomPage th {
+  color: white;
+}
+
+.grp1BottomPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.infoArrondie tbody>P {
+  display: flex;
+  justify-items: center;
+}
+
+.grp1BottomPage>table, th, td {
+  border: 1px solid #767ADA;
+}
+
+.grp1BottomPage table {
+  width: 237px;
+  height: 169px;
+
+}
+
+.grp1BottomPage th {
+  width: 237px;
+  height: 28px;
+  background-color: #767ADA;
+}
+
+.grp2BottomPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.grp2BottomPage>table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.grp2BottomPage table {
+  border: 1px solid black;
+  width: 237px;
+  height: 169px;
+}
+
+
+.grp2BottomPage th {
+  width: 237px;
+  height: 28px;
+  background-color: #767ADA;
+
+}
+
+.branchesEtMoyennes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grp3BottomPage {
+  width: 237px;
+  height: 169px;
+  display: grid;
+  justify-items: center;
+}
+
+.titleMoynneGlobal {
+
+  left: 0%;
+  right: 0%;
+  top: 23.81%;
+  bottom: -23.81%;
+
+  width: 143px;
+  height: 52px;
+  background: #767ADA;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+
+}
+
+.reussiOuEchec {
+
+  left: 80%;
+  right: 13.26%;
+  top: 87.17%;
+  bottom: 9.12%;
+
+  background: #FFFFFF;
+  border: 4px solid #767ADA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  width: 97px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  vertical-align: inherit;
+  text-align: center;
+}
+
+.reussiOuEchec>span {
+  font-size: 30px;
+
+  font-weight: bold;
+}
