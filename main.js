@@ -184,10 +184,12 @@ else {
 
 
                 bravo.textContent = "Tu as obbtenu le CFC"
+                spanFin.style.color = "green"
 
             }
             else {
                 bravo.textContent = "Tu n'as pas obbtenu le CFC"
+                spanFin.style.color = "red"
 
 
             }
