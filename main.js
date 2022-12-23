@@ -178,12 +178,14 @@ else {
             spanFin.innerHTML = cfc
 
             let bravo = document.getElementById("averageTotal1")
+            let brav = bravo.textContent = "shgdsghdgshgdh"
 
 
             if (cfc >= 4) {
 
 
-                let brav = bravo.textContent = "shgdsghdgshgdh"
+                brav.innerHTML = "Tu as obtenu ton cff"
+                console.log(brav);
 
             }
             else {
@@ -191,21 +193,6 @@ else {
                 console.log(brav);
 
             }
-
-            // let tableFinales = document.getElementById("branchesEtMoyennes")
-
-            // let span1 = tableFinales.getElementsByTagName("span")[0];
-            // let span2 = tableFinales.getElementsByTagName("span")[1];
-            // let span3 = tableFinales.getElementsByTagName("span")[2];
-            // let span4 = tableFinales.getElementsByTagName("span")[3];
-            // let span5 = tableFinales.getElementsByTagName("span")[4];
-
-
-            // console.log(span1.innerHTML);
-            // console.log(span2.innerHTML);
-            // console.log(span3.innerHTML);
-            // console.log(span4.innerHTML);
-            // console.log(span5.innerHTML);
 
         })
     }
