@@ -138,7 +138,7 @@ else {
                 if (radioID == null) {
                     let splitId = input.id.split("-");
 
-                    insertGradeInObjectWithInputId(splitId[1], splitId[2], gradeInput)
+                    gradesObject[splitId[1]][splitId[2]].push(gradeInput)
                     spanIdFinal.innerHTML = avg
 
 
