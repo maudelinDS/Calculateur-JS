@@ -178,19 +178,17 @@ else {
             spanFin.innerHTML = cfc
 
             let bravo = document.getElementById("averageTotal1")
-            let brav = bravo.textContent = "shgdsghdgshgdh"
 
 
             if (cfc >= 4) {
 
 
-                brav.innerHTML = "Tu as obtenu ton cff"
-                console.log(brav);
+                bravo.textContent = "Tu as obbtenu le CFC"
 
             }
             else {
-                brav.innerHTML = "Tu n'as pas obtenu ton cff"
-                console.log(brav);
+                bravo.textContent = "Tu n'as pas obbtenu le CFC"
+
 
             }
 
